@@ -9,7 +9,8 @@ Open the file in sublime. Copy the following questions in it and answer them.
 	* revert changes 
 	* easy backup
 	* more than one developer can work on project
-	* What is a commit?
+
+2. What is a commit?
 	* In version control system, a commit adds latest changes to software repository. This way when other user do any update or checkout  a project, they will receive a latest version, unless they specify they wish to retrieve a previous version of the source code in the repository.
 
 2. What are the best practices for commit messages?
@@ -26,7 +27,7 @@ Open the file in sublime. Copy the following questions in it and answer them.
 
 
 3. three stages are
-git 'add <filename>'
+git `add <filename>`
 git 'commit -m "message"'
 git push origin <branch-name>
 Write a handy cheatsheet of the commands you need to commit your changes.
