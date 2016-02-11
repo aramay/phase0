@@ -1,5 +1,4 @@
 #Using your command line, create a new file called tracking-changes-reflection.md in the week-1 directory.
-Open the file in sublime. Copy the following questions in it and answer them.
 
 
 1. How does tracking and adding changes make developers' lives easier?
@@ -36,7 +35,7 @@ Open the file in sublime. Copy the following questions in it and answer them.
 6. Write a handy cheatsheet of the commands you need to commit your changes.
 	* As a good practice, you should create a branch for your changes
 
-type `git checkout -b <feature-x>`
+	type `git checkout -b <feature-x>`
 	* create a file and add changes.
 	* save file and exit
 	* on command line type `git status`
@@ -48,7 +47,7 @@ type `git checkout -b <feature-x>`
 >(use "git checkout -- <file>..." to discard changes in working directory)
 >modified:   tracking-changes-reflection.md	
 
-type `git add <filename>` and check status with `git status`
+	type `git add <filename>` and check status with `git status`
 
 >On branch feature-x
 Changes to be committed:
@@ -64,8 +63,7 @@ Changes to be committed:
 On branch feature-x
 nothing to commit, working directory clean
 
-	* In last step, you want to push your changes to remote repository. This way we can merge our change to 
-_master branch._
+	* In last step, you want to push your changes to remote repository. This way we can merge our change to _master branch._
 
 >aaron@aaron-Box:~/Documents/phase0-local/phase0/week-1$ git push origin feature-x 
 Username for 'https://github.com': kasper341
@@ -77,7 +75,10 @@ Total 4 (delta 1), reused 0 (delta 0)
 To https://github.com/kasper341/phase0.git
 > * [new branch]      feature-x -> feature-x
 
-	* Go to your gitHub account, you will see a message like _“Your recently pushed branches:”_ Here you can merge your change with master branch.
+	* Go to your gitHub account, you will see a message like 
+	“Your recently pushed branches:” 
+	Here you can merge your change with master branch.
+
 
 7. What is a pull request and how do you create and merge one?
 
@@ -87,6 +88,7 @@ To create a pull request, type `git push origin <branch-name>`
 go to your GitHub account and click _“compare and pull request”_
 Next window will open your commit history. Click _“create pull request”_
 Finally _“Merge Pull Request”_
+
 
 8. Why are pull requests preferred when working with teams?
 
