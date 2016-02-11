@@ -37,12 +37,12 @@ Open the file in sublime. Copy the following questions in it and answer them.
 	* create a file and add changes.
 	* save file and exit
 	* on command line type `git status`
-> aaron@aaron-Box:~/Documents/phase0-local/phase0/week-1$ git status
-> On branch feature-x
-> Changes not staged for commit:
-> (use "git add <file>..." to update what will be committed)
-> (use "git checkout -- <file>..." to discard changes in working directory)
-> modified:   tracking-changes-reflection.md	
+>aaron@aaron-Box:~/Documents/phase0-local/phase0/week-1$ git status
+>On branch feature-x
+>Changes not staged for commit:
+>(use "git add <file>..." to update what will be committed)
+>(use "git checkout -- <file>..." to discard changes in working directory)
+>modified:   tracking-changes-reflection.md	
 
 type git add <filename> and check status with git status
 On branch feature-x
