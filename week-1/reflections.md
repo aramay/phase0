@@ -46,6 +46,7 @@ more than one developer can work on prokject
 
 What is a commit?
 In version control system, a commit adds latest changes to software repository. This way wheen other user do any update or checkout  a project, they will receive a latest version, unless they specify they wish to retrieve a previous version of the source code in the repository.
+
 <h1>new heading</h1>
 
 
