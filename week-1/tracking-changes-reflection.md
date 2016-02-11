@@ -31,7 +31,7 @@ git 'commit -m "message"'
 git push origin <branch-name>
 Write a handy cheatsheet of the commands you need to commit your changes.
 As a good practice, you should create a branch for your changes
-type git checkout -b <feature-x>
+type >git checkout -b <feature-x>
 create a file and add changes.
 save file and exit
 on command line type git status
