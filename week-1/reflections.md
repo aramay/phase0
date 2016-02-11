@@ -1,5 +1,34 @@
 <h1>1.1 Think About Time</h1>
+
+Which time management and productivity ideas did you learn about?
+
+I learned how meditation can help me with elaborate attention span. Now i can catch my attention wander off when i trying work on complex topic. I can concentrate on task in much efficient way. Meta attention, is the ability to know that your attention has wandered off. Before learning about meditation and how it can help me with productivity was a big struggle. Now i’ve a clear mind and just being aware of these distractions is a big help in being productive. 
+
+Phase 0 is 15-20 hour effort per week, this makes it 4 hour of study in a day. I would divide each day in 2 hour sprints. In these 2 hours i can use pomodoro technique to divide tasks in smaller chunks for better learning and time management. This way i would know which task are taking more time and need more time to complete. At the end of the day, i would recap to check level of understanding and see if something needs revision.
+
+
+
+What is "Time Boxing?" How can you use it in Phase 0?
+
+Each planned activity is allocated a fixed time, during which team or person work towards completion of some goal. When time box limit is reached, work is stopped and evaluate what was accomplished. 
+
+In phase 0, peer pairing and guided pairing session can take place using time boxed approach. This way we don’t spend hours on session and concentrate what we can learn from each other and guides. 
+
+How do you manage your time currently?
+
+I’ve each week split into 2 hour sprints each morning/evening. I prioritize task that would take longer than others. This way i can see my progress and identify area which require more work to be done. I usually schedule difficult tasks during morning hours, this time is usually most productive. 
+
+Keeping schedule of personal appointments let's me concentrate on my work and don’t let them become distractions. 
+
+Is your current strategy working? If not, why not?
+
+
+Can/will you employ any of them? If so, how?
+What is your overall plan for Phase 0 time management?
+
+
 <h1>1.2 The Command Line</h1>
+
 <h1>version control</h1>
 Write an explanation of and compare Git and GitHub to one another.
 Git is a widely used “source code management system” for software development. It is the management of changes to documents, computer programs, large web sites, and other collections of information. Git is like an App that runs locally on user's machine. 
