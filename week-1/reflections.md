@@ -49,4 +49,6 @@ In version control system, a commit adds latest changes to software repository. 
 
 <h1>new heading</h1>
 
+<h1> over ride changes with checkout</h1>
+
 
