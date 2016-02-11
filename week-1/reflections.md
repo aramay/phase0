@@ -1,4 +1,4 @@
-<h1>1.1 Think About Time</h1>
+##1.1 Think About Time
 
 Which time management and productivity ideas did you learn about?
 
@@ -27,9 +27,9 @@ Can/will you employ any of them? If so, how?
 What is your overall plan for Phase 0 time management?
 
 
-<h1>1.2 The Command Line</h1>
+##1.2 The Command Line
 
-<h1>version control</h1>
+##version control
 Write an explanation of and compare Git and GitHub to one another.
 Git is a widely used “source code management system” for software development. It is the management of changes to documents, computer programs, large web sites, and other collections of information. Git is like an App that runs locally on user's machine. 
 Git
@@ -76,8 +76,8 @@ more than one developer can work on prokject
 What is a commit?
 In version control system, a commit adds latest changes to software repository. This way wheen other user do any update or checkout  a project, they will receive a latest version, unless they specify they wish to retrieve a previous version of the source code in the repository.
 
-<h1>new heading</h1>
+##new heading
 
-<h1> over ride changes with checkout</h1>
+## over ride changes with checkout
 
 
