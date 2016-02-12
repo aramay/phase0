@@ -1,6 +1,7 @@
 # Release 5: Reflect
 
     Now's the time to reflect on your learning! Remember to create a feature branch! Then (using your command line) in your phase-0/week-1 directory, create a file called my-website-1-reflection.md. Open the file in sublime, copy the questions below, and add your reflection to the file. 
+    
 1. Paste a link to your [USERNAME].github.io repository.
  * [Link](http://kasper341.github.io/)
 
