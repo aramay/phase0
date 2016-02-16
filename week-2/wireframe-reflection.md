@@ -8,7 +8,7 @@
 
 ## Release 4: Reflect
 
-###In the reflection file you just created, answer the following questions.
+###answer the following questions.
 
 1. What is a wireframe?
   * A “wire frame” is a non-graphical layout of the proposed web page .Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.
