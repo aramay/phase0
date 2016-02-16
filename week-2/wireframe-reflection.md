@@ -1,4 +1,4 @@
-#2.4 Wireframing (medium)
+#2.4 Wireframing
 
 ## Release 3: Display your wireframes
 
