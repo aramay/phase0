@@ -1,7 +1,23 @@
 
+*
 
+h1{
 
-.content-container{
+  text-align: center;
+  font-size: large;
+}
+
+h1:first-letter{
+  text-transform: uppercase;
+   font-size: xx-large;
+}
+
+h1:ten-letter{
+  text-transform: uppercase;
+   font-size: xx-large;
+}
+
+#content-container{
   width: 100%;
   overflow: auto;
 }
