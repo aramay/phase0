@@ -1,48 +1,74 @@
+h2:first-letter{
+  text-transform: uppercase;
+  font-size: xx-large;
+}
 
-*
+span{
+  text-transform: uppercase;
+  font-size: xx-large;
+}
 
-h1{
+.padding-removed{
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  padding: 15px 0 8px 16px;
+}
+
+html {
+  color: #000080;
+}
+
+a:link {
+  color: #800080;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+#container {
+  height: 100%;
+  overflow: hidden;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.centered {
+  margin: auto;
+  width: 50%;
   text-align: center;
-  font-size: large;
 }
 
-h1:first-letter{
-  text-transform: uppercase;
-   font-size: xx-large;
-}
-
-h1:ten-letter{
-  text-transform: uppercase;
-   font-size: xx-large;
-}
-
-#content-container{
-  width: 100%;
-  overflow: auto;
-}
-
-.content-left{
-  width: 40%;
-
-  margin: 0 auto;
-}
-
-.content-right{
-  width: 40%;
-  margin: 0 auto;
-}
-
-.float-left{
+.content-left {
   float: left;
-
+  width: 50%;
+  height: 80%;
 }
 
-.footer{
-  width: 100%
-  margin 0 auto;
-  text-align: center;
-
+.content-right {
+  float: right;
+  width: 50%;
+  height: 80%;
 }
 
+.geico {
+  font-size: x-small;
+  margin: 10px;
+  margin: auto;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
 
+.bottom-container {
+  border-bottom-style: solid;
+  border-width: 1px;
+  font-size: small;
+}
+
+.footer-text {
+  font-size: x-small;
+}
