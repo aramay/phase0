@@ -1,3 +1,41 @@
+/*
+Answer the following questions
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+To link external use tag "<link rel="stylesheet" href="#">
+href is path of file on local drive. We should always use relative path to file name.
+1. If it's on same path as your index.html file, then we can use just a file name.
+2. If it's down under a different directory, then we should use "folder-name/file-name.css"
+3. If it's is up one directory, then we should use "../folder-name/file-name.css"
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+We used "float" property to place boxes next to each other.
+This presented a problem ,where parent <div> container did not accpet height attribute.
+
+We solved this by adding "overflow: hidden" property. Other than that we did not find any thing too complex.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+We used
+
+text-transform: uppercase;
+font-size: xx-large;
+color: #000080;
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+We used ID and classes.
+
+- ID can be used to uniquely identify elements on your page. They especially usefull in automated testing.
+
+- Classes can be used in the same way and many classes can be applied to same element. This can help in simplify your design strategy. Similar style and formatting can be rouped toghether and applied via classses.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+This re-write is a better code base. We used external resources to implement styles. Current implementation has in-line styles which are tediuos to work with and not very extensible. Future enhancements can be easily implemented.
+*/
 h2:first-letter{
   text-transform: uppercase;
   font-size: xx-large;
