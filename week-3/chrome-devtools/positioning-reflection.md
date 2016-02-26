@@ -62,6 +62,7 @@
 
 4. What are the differences between margin, border, and padding?
 What was your impression of this challenge overall? (love, hate, and why?)
+    
     Padding - Clears an area around the content. The padding is transparent
     Border - A border that goes around the padding and content
     Margin - Clears an area outside the border. The margin is transparent
