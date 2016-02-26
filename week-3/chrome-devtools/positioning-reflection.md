@@ -32,11 +32,11 @@
 
 8. Sidebar
 ![Sidebar]
-(../imgs/3.4-7.png)
+(../imgs/3.4-8.png)
 
 9. Get-Creative
-![Sidebar]
-(../imgs/3.4-7.png)
+![Get-Creative]
+(../imgs/3.4-9.png)
 
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
