@@ -39,8 +39,22 @@
 (../imgs/3.4-9.png)
 
 
-How can you use Chrome's DevTools inspector to help you format or position elements?
-How can you resize elements on the DOM using CSS?
+1. How can you use Chrome's DevTools inspector to help you format or position elements?
+
+    The Styles pane shows the CSS rules that apply to the selected element, from highest priority to lowest:
+    You can add or edit styles within the Styles pane in the Elements panel. Unless the area containing the styling information is greyed out, all styles are editable. Edit styles in the following ways:
+        * Edit an existing property name or value.
+        * Add a new property declaration.
+        * Add a new CSS rule.
+
+2. How can you resize elements on the DOM using CSS?
+    We can resize elements by their.
+        * width
+        * height
+        * padding 
+        * margins
+
 What are the differences between absolute, fixed, static, and relative positioning? Which did you find easiest to use? Which was most difficult?
+
 What are the differences between margin, border, and padding?
 What was your impression of this challenge overall? (love, hate, and why?)
