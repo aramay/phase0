@@ -68,4 +68,6 @@ What was your impression of this challenge overall? (love, hate, and why?)
     Margin - Clears an area outside the border. The margin is transparent
 
     I loved this challenge, there was a lot of consfusion around positioning of boxes. In solo challenges, i spent most of time on positioning my elements. 
-    I liked it because we got to work with different positioning property e.g. absolute and relative. The box offset properties were applied to place elements where the element should appear. 
+    I liked it because we got to work with different positioning property e.g. absolute and relative. The box offset properties were difficult to understand. Through discussion and trial and error helped to place elements where the element should appear. 
+
+    I think this challenge should be split into two seperate sessions. It took us 2 hours to get through this challenge. I felt rushed through it, i would prefer to talk more about it and try more scenarios with peer. 
