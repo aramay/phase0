@@ -42,10 +42,12 @@ def add(num_1, num_2)
  return ans
 end
 
-Here varaible 'ans' maintain two seperate copies, independent of each other.
+Here varaible 'ans' maintain two seperate copies, independent of each other. variable inside method 'add' is local and outside is global.
+
 How do you define a method?
 
-It begind with keyword 'def' followed by method name. Ends with a keyword 'end' to denote that is closed.
+It begins with keyword 'def' followed by method name.
+Ends with a keyword 'end' to denote that is closed.
 
 def add(num_1, num_2)
 
@@ -61,6 +63,6 @@ How do you run an RSpec file from the command line?
   'rspec filename.rb'
 
 What was confusing about this material? What made sense?
-This challenge did not have any surprises. Ii was pretty comfortable with all the materail.
+This challenge did not have any surprises. I was pretty comfortable with all the material.
 =end
 
