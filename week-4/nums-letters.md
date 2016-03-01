@@ -102,4 +102,4 @@ hello, world```
 6. How was this challenge? Did you get a good review of some of the basics?
     
     This was good re-fresher on arithematic division , strings. 
-    I have not used IRB before, it is different way of doing things that i've not seen before.
+    I have not used _Rspec_ before, it is different way of doing things that i've not seen before.
