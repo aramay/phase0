@@ -98,8 +98,8 @@ hello, world```
 5. What are local variables? Why and when would you use them?
     
     Local variables are limited in scope, such as method definition.
-    Local can be re-used in different parts of the program.
+    Local variables can be re-used in different parts of the program.
 6. How was this challenge? Did you get a good review of some of the basics?
     
     This was good re-fresher on arithematic division , strings. 
-    I have not used IRB before, it is different way of doing things that i've seen before.
+    I have not used IRB before, it is different way of doing things that i've not seen before.
