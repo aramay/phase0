@@ -1,0 +1,17 @@
+.column-1 {
+  background-color: purple;
+  width: 45%;
+  float: left;
+  margin-right: 5px;
+}
+
+.column-2 {
+  background-color: red;
+  width: 45%;
+  float: left;
+  margin-left: 5px;
+}
+
+footer {
+  clear: left;
+}
