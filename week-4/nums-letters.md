@@ -67,7 +67,7 @@ https://github.com/kasper341/phase0/blob/master/week-4/minutes-in-decade.rb
     >(e.g. 1.00, 3.21).
 3. What is the difference between integer and float division?
     
-    Interger division:
+    **Interger division:**
 
     You first work out how many 4s will fit inside 9:
 
@@ -79,7 +79,7 @@ https://github.com/kasper341/phase0/blob/master/week-4/minutes-in-decade.rb
 
     This means, we can only divide 9 in two equals groups, remiaining is chopped off.
     
-    Float division:
+    **Float division:**
 
     It rounds to next possible value. 
 
@@ -92,11 +92,14 @@ https://github.com/kasper341/phase0/blob/master/week-4/minutes-in-decade.rb
 
     ```irb(main):007:0> puts "hello, world"
 hello, world```
+    
     We can represent punctuation, special charaacters that we cannot reprsent with anyother data type. 
 
 5. What are local variables? Why and when would you use them?
+    
     Local variables are limited in scope, such as method definition.
     Local can be re-used in different parts of the program.
 6. How was this challenge? Did you get a good review of some of the basics?
+    
     This was good re-fresher on arithematic division , strings. 
     I have not used IRB before, it is different way of doing things that i've seen before.
