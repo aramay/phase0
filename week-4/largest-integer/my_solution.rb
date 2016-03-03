@@ -13,4 +13,26 @@
 # Your Solution Below
 def largest_integer(list_of_nums)
   # Your code goes here!
+
+  #assume first index is largest
+  largest_num = list_of_nums[0]
+  i = 0
+  #lenght of array
+  length = list_of_nums.length
+
+
+  while (i < length)
+    #compare first index to largest_num
+    if(list_of_nums[i] > largest_num)
+      #if true assign new largest
+       largest_num = list_of_nums[i]
+    end
+
+    i = i + 1
+
+  end
+  return largest_num
+
 end
+
+puts largest_integer([-10, -20, -30])
