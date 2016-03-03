@@ -11,7 +11,6 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
-require 'pry'
 def smallest_integer(list_of_nums)
   # Your code goes here!
 
