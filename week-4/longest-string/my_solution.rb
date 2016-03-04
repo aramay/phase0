@@ -16,21 +16,21 @@ def longest_string(list_of_words)
  # Your code goes here!
 
   #assume shortest_word is at index 0
-  shortest_word = list_of_words[0]
+  largest_word = list_of_words[0]
   i = 0
 
   while (i < list_of_words.length)
     #compare shortest_word.lenght with list_of_words.length
-    if (shortest_word.length < list_of_words[i].length)
+    if (largest_word.length < list_of_words[i].length)
       #assign new shortest_word
-      shortest_word = list_of_words[i]
+      largest_word = list_of_words[i]
     end
 
     i += 1
 
   end
 
-  return shortest_word
+  return largest_word
 
 end
 
