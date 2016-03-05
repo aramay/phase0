@@ -44,16 +44,15 @@ def sentence_maker(strings)
   puts strings.length
 
   while (x < strings.length)
-
     i = i + strings[x] +" "
-
     x += 1
 
   end
 
+  i = i.strip
   i << "."
-  return i
 
+  return i
 end
 
 puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"])
