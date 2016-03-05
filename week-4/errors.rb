@@ -39,9 +39,9 @@ end
 #south_park = 0
 
 # 1. What is the line number where the error occurs?
-# errors.rb
+# 39
 # 2. What is the type of error message?
-# undefined local variable or method
+# in `<main>'
 # 3. What additional information does the interpreter provide about this type of error?
 # undefined local variable or method `south_park'
 # 4. Where is the error in the code?
