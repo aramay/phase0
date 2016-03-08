@@ -41,10 +41,10 @@ def sentence_maker(strings)
   i = ""
   x = 0
 
-  puts strings.length
-
   while (x < strings.length)
-    i = i + strings[x] +" "
+
+    i = i + strings[x].to_s
+    i = i + " "
     x += 1
 
   end
@@ -52,15 +52,17 @@ def sentence_maker(strings)
   i = i.strip
   i << "."
 
-  return i
+  return i.capitalize
 end
 
-puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"])
+# puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"])
+
+puts sentence_maker(["alaska", "has", "over", 586, "thousand", "miles"])
 # => "I want to go to the movies."
 
 # 6. sentence_maker refactored solution
 
-def sentence_maker(strings)
- strings.join(' ').capitalize << "."
-end
+# def sentence_maker(strings)
+#  strings.join(' ').capitalize << "."
+# end
 
