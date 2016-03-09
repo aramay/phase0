@@ -31,6 +31,29 @@
 # steps: Print out each item of the list in a nice format.
 # output: The contents of our list, formatted for legibility.
 
+#Release 5: Reflect
+=begin
+Answer the following questions in your reflection:
+
+What did you learn about pseudocode from working on this challenge?
+  pseudocode helps in discussing about a problem. We were able to iron out the detials and decide what should go into this program and what should not.
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+  Hash data structure provides and better mechanism for this type of problem, where you have to maintain key/value pair information. In arrays we would have to use two dimension arrays to store key and value. It can easily get complicated with two dimensional arrays.
+
+What does a method return?
+  a method can return object.
+What kind of things can you pass into methods as arguments?
+  We can pass any type of object.
+How can you pass information between methods?
+  We can return a value from a method to a callee.
+  then we can pass that value onto a new method
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+  Hash data structure was bit confusing. I had trouble creating a hash from an array. create_list - method
+
+
+
+=end
 
 
 def create_list(list_items)
@@ -64,6 +87,19 @@ def update_item(list_items, key, value)
 
 end
 
+def delete_item(list_items, item_to_delete)
+
+  list_items.delete(item_to_delete) {|el| "#{el} item not found"}
+end
+
+def format_item(list_items)
+
+  list_items.each do |x, y|
+    puts "You have #{y} #{x}"
+  end
+
+end
+
 
 #create_list("apple oranges")
 list = ("Lemonade Tomatoes Onions")
@@ -80,3 +116,7 @@ add_item(new_grocery_list, "Tomatoes", 3)
 add_item(new_grocery_list, "Onions", 1)
 #update existing values
 update_item(new_grocery_list, "Ice \ Cream", 1)
+
+delete_item(new_grocery_list, "Lemonade")
+
+format_item(new_grocery_list)
