@@ -124,11 +124,19 @@ end
 answers the following questions:
 
 Were you successful in breaking the problem down into small steps?
+	Yes
 Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
-Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
-When you refactored, did you find any existing methods in Ruby to clean up your code?
-How readable is your solution? Did you and your pair choose descriptive variable names?
-What is the difference between destructive and non-destructive methods in your own words?
+	Pseudocode helped in breaking down the problem. We were able to figure out padding size that would go with each scenario. This way our program can be implemented any length of array.
 
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+		Out initial solution was succesfull. Rspec had few test failing in pad!() method. There was an error that we didn't modify original array. There was a small fix and nothing too complicated.
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+	We sticked to our original solution, although push method simplified a lot of details.
+How readable is your solution? Did you and your pair choose descriptive variable names?
+	Yes
+What is the difference between destructive and non-destructive methods in your own words?
+	destructive methods change the object on which they are called
+
+	non-destructive methods return a new object on which they are called
 
 =end
