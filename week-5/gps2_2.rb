@@ -47,17 +47,36 @@ def create_list(list_items)
 
 end
 
-def add_item(list)
+def add_item(list_items, key, value)
 
-  p list
+  list_items[key] = value
 
 
+  puts "add #{list_items}"
+
+end
+
+def update_item(list_items, key, value)
+
+  list_items[key] = value
+
+  p "update #{list_items}"
 
 end
 
 
 #create_list("apple oranges")
+list = ("Lemonade Tomatoes Onions")
+quantity =  [2, 3, 1, 4]
 
-new_grocery_list = create_list("apple oranges")
+#creat grocery list
+new_grocery_list = create_list(list)
 
-add_item(new_grocery_list)
+#add new items to list
+#(new_grocery_list, "IceCream", 1)
+add_item(new_grocery_list, "Ice \ Cream", 4)
+add_item(new_grocery_list, "Lemonade", 2)
+add_item(new_grocery_list, "Tomatoes", 3)
+add_item(new_grocery_list, "Onions", 1)
+#update existing values
+update_item(new_grocery_list, "Ice \ Cream", 1)
