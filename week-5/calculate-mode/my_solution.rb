@@ -1,6 +1,6 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [with: ]
 
 # I spent [] hours on this challenge.
 
@@ -21,33 +21,78 @@
 require "pry"
 def mode(num)
 
-  new_num = {}
-  count = 0
 
+  new_num = {}
+  count = 1
+
+  max_count = 1
+binding.pry
   num.each do |x|
-    new_num[x] = count
+    #puts "array is #{x}"
+
+    if new_num.has_key?(x)
+      new_num[x] = count + 1
+      #puts "increment hash #{new_num[x]}"
+    else
+      new_num.store(x, count)
+    end
+
+    puts "new hash with frequent_values #{new_num}"
+
   end
 
+  #calculate most frequent values
+
+  # result_array_frequent = []
+  # result_array_not_frequent = []
+
+  #binding.pry
 
   new_num.each do |x, y|
-    binding.pry
-    if new_num.has_key?(x)
-      puts "yes"
-      #new_num[x]
-      new_num[x] += 1
-      #puts " key #{new_num[x]} value #{new_num[y]}"
-      puts "key #{x} value is #{y} "
+    puts "hash key #{x} value #{y}"
+    if (y > max_count)
+      max_count = y
+
+      result_array_frequent << x
+      p "max_count element #{result_array_frequent}"
+
+    else
+      # result_array_not_frequent << x
+      puts "max_count elemnent in else block #{x}"
+
     end
-  #puts new_num.has_key?(4.5)
-  #   puts "yes"
+
+    #return num
+
   end
 
-  puts new_num
+  if(result_array_frequent.empty?)
+    return num
+  else
+    return result_array_frequent
+  end
 
+
+  # puts result_array_frequent
+
+  # return result_array_frequent
 
 end
 
- puts mode([4.5, 0, 0])       # => [0]
+
+
+ #puts mode([4.5, 0, 0])       # => [0]
+ #mode([1,2,3,3])
+#mode_result = mode(["who", "what", "where", "who", "where"]) # => ["who"]
+# mode_result = mode([4, 4, 5, 5, 6, 6, 6, 7, 5])
+
+mode_result = mode([6, 6, 6])
+puts "mode returned results #{mode_result}"
+#puts "returned value #{mode_result}"
+
+#most_frequent_list = most_frequent_value(mode_result)
+
+#puts "returned #{most_frequent_list}"
 
 # 3. Refactored Solution
 
