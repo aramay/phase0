@@ -23,7 +23,6 @@ def mode(num)
 
 
   new_num = {}
-  count = 1
 
   max_count = 0
 #binding.pry
@@ -57,45 +56,21 @@ def mode(num)
     end
 
     if(y >= max_count)
-            max_count = y
+      max_count = y
 
       result_array_frequent << x
     end
-      p "max_count element #{result_array_frequent}"
+      #p "max_count element #{result_array_frequent}"
 
-    # else
-    #   # result_array_not_frequent << x
-    #   puts "max_count elemnent in else block #{x}"
-
-
-
-    #return num
 
   end
 
   return result_array_frequent
-
-
-  # puts result_array_frequent
-
-  # return result_array_frequent
-
 end
 
 
-
- #puts mode([4.5, 0, 0])       # => [0]
- #mode([1,2,3,3])
-#mode_result = mode(["who", "what", "where", "who", "where"]) # => ["who"]
-# mode_result = mode([4, 4, 5, 5, 6, 6, 6, 7, 5])
-
 mode_result = mode([6, 2, 2, 6])
 puts "mode returned results #{mode_result}"
-#puts "returned value #{mode_result}"
-
-#most_frequent_list = most_frequent_value(mode_result)
-
-#puts "returned #{most_frequent_list}"
 
 # 3. Refactored Solution
 
@@ -103,3 +78,12 @@ puts "mode returned results #{mode_result}"
 
 
 # 4. Reflection
+
+=begin
+What was your process for breaking the problem down? What different approaches did you consider?
+Was your pseudocode effective in helping you build a successful initial solution?
+What new Ruby method(s) did you use when refactoring your solution? Describe your experience of using the Ruby documentation to implement it/them (any difficulties, etc.). Did it/they significantly change the way your code works? If so, how?
+How did you initially iterate through the data structure?
+Do you feel your refactored solution is more readable than your initial solution? Why?
+
+=end
