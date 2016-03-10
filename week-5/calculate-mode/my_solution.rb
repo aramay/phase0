@@ -25,13 +25,13 @@ def mode(num)
   new_num = {}
   count = 1
 
-  max_count = 1
-binding.pry
+  max_count = 0
+#binding.pry
   num.each do |x|
     #puts "array is #{x}"
 
     if new_num.has_key?(x)
-      new_num[x] = count + 1
+      new_num[x] += 1
       #puts "increment hash #{new_num[x]}"
     else
       new_num.store(x, count)
@@ -43,7 +43,7 @@ binding.pry
 
   #calculate most frequent values
 
-  # result_array_frequent = []
+   result_array_frequent = []
   # result_array_not_frequent = []
 
   #binding.pry
@@ -51,26 +51,29 @@ binding.pry
   new_num.each do |x, y|
     puts "hash key #{x} value #{y}"
     if (y > max_count)
-      max_count = y
+
+      #result_array_frequent << x
+      result_array_frequent = []
+    end
+
+    if(y >= max_count)
+            max_count = y
 
       result_array_frequent << x
+    end
       p "max_count element #{result_array_frequent}"
 
-    else
-      # result_array_not_frequent << x
-      puts "max_count elemnent in else block #{x}"
+    # else
+    #   # result_array_not_frequent << x
+    #   puts "max_count elemnent in else block #{x}"
 
-    end
+
 
     #return num
 
   end
 
-  if(result_array_frequent.empty?)
-    return num
-  else
-    return result_array_frequent
-  end
+  return result_array_frequent
 
 
   # puts result_array_frequent
@@ -86,7 +89,7 @@ end
 #mode_result = mode(["who", "what", "where", "who", "where"]) # => ["who"]
 # mode_result = mode([4, 4, 5, 5, 6, 6, 6, 7, 5])
 
-mode_result = mode([6, 6, 6])
+mode_result = mode([6, 2, 2, 6])
 puts "mode returned results #{mode_result}"
 #puts "returned value #{mode_result}"
 
