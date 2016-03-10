@@ -23,6 +23,7 @@ def mode(num)
 
 
   new_num = {}
+  count = 1
 
   max_count = 0
 #binding.pry
