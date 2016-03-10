@@ -23,15 +23,14 @@ def mode(num)
 
 
   new_num = {}
-  count = 1
 
-  max_count = 1
-binding.pry
+  max_count = 0
+#binding.pry
   num.each do |x|
     #puts "array is #{x}"
 
     if new_num.has_key?(x)
-      new_num[x] = count + 1
+      new_num[x] += 1
       #puts "increment hash #{new_num[x]}"
     else
       new_num.store(x, count)
@@ -43,7 +42,7 @@ binding.pry
 
   #calculate most frequent values
 
-  # result_array_frequent = []
+   result_array_frequent = []
   # result_array_not_frequent = []
 
   #binding.pry
@@ -51,48 +50,27 @@ binding.pry
   new_num.each do |x, y|
     puts "hash key #{x} value #{y}"
     if (y > max_count)
+
+      #result_array_frequent << x
+      result_array_frequent = []
+    end
+
+    if(y >= max_count)
       max_count = y
 
       result_array_frequent << x
-      p "max_count element #{result_array_frequent}"
-
-    else
-      # result_array_not_frequent << x
-      puts "max_count elemnent in else block #{x}"
-
     end
+      #p "max_count element #{result_array_frequent}"
 
-    #return num
 
   end
 
-  if(result_array_frequent.empty?)
-    return num
-  else
-    return result_array_frequent
-  end
-
-
-  # puts result_array_frequent
-
-  # return result_array_frequent
-
+  return result_array_frequent
 end
 
 
-
- #puts mode([4.5, 0, 0])       # => [0]
- #mode([1,2,3,3])
-#mode_result = mode(["who", "what", "where", "who", "where"]) # => ["who"]
-# mode_result = mode([4, 4, 5, 5, 6, 6, 6, 7, 5])
-
-mode_result = mode([6, 6, 6])
+mode_result = mode([6, 2, 2, 6])
 puts "mode returned results #{mode_result}"
-#puts "returned value #{mode_result}"
-
-#most_frequent_list = most_frequent_value(mode_result)
-
-#puts "returned #{most_frequent_list}"
 
 # 3. Refactored Solution
 
@@ -100,3 +78,12 @@ puts "mode returned results #{mode_result}"
 
 
 # 4. Reflection
+
+=begin
+What was your process for breaking the problem down? What different approaches did you consider?
+Was your pseudocode effective in helping you build a successful initial solution?
+What new Ruby method(s) did you use when refactoring your solution? Describe your experience of using the Ruby documentation to implement it/them (any difficulties, etc.). Did it/they significantly change the way your code works? If so, how?
+How did you initially iterate through the data structure?
+Do you feel your refactored solution is more readable than your initial solution? Why?
+
+=end
