@@ -53,7 +53,8 @@ end
 =begin
 - I used .is_a?(Integer) to find intergers is a array, if found, increment that value with given argument
 
-- In hashes, i used iteration.
+- In hashes, i used iteration. This way i indexed a key which points to value. After that i incremented that value.
+
 =end
 
 
