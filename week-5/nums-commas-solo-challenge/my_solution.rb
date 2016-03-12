@@ -20,42 +20,6 @@
 
 # 1. Initial Solution
 =begin
-def separate_comma(x)
-
-  y = x.to_s
-
-  if (y.length == 4)
-    y.insert(1,",")
-  elsif (y.length == 5)
-    y.insert(2,",")
-  elsif (y.length == 6)
-    y.insert(3,",")
-
-
-  elsif (y.length == 7)
-    y.insert(1, ",")
-    y.insert(5, ",")
-  elsif (y.length == 8)
-    y.insert(2,",")
-    y.insert(6,",")
-
-  else
-    return y
-
-  end
-
-  return y
-
-end
-
-puts separate_comma(1000)
-puts separate_comma(10000)
-puts separate_comma(1000000)
-puts separate_comma(100000)
-
-=end
-
-# 2. Refactored Solution
 require 'pry'
 def separate_comma(x)
 
@@ -89,42 +53,48 @@ def separate_comma(x)
       result_array.insert(-1, ",")
 
     end
-
-
-
-      # if x.include?("0")
-
-      # result_array << x
-      # result_array.insert(-1, ",")
-
-
-    # if x.include?("0")
-
-    # result_array = x
-    # result_array.insert(-1, ",")
-
-    # end
   end
 
   result_array = result_array.flatten.join.reverse
-  # result_array.reverse
+
   p "#{result_array}"
 
-  # number_to_array[0..2]
-  #   #number_to_array.insert(",")
-  #   puts number_to_array
-  # # end
-
-  # puts number_to_array
-
 end
-puts separate_comma(10000000)
+#puts separate_comma(10000000)
 #puts separate_comma(100)
 #puts separate_comma(1000) #- works
 #puts separate_comma(10000) #- works
 #puts separate_comma(1000000) #- works
 #puts separate_comma(100000) #workds
+puts separate_comma(999999)
+=end
 
+# 2. Refactored Solution
+
+def separate_comma(x)
+
+  #convert to string
+  puts number_to_string = x.to_s
+
+  #conver to array
+  puts number_to_array = number_to_string.split(//).reverse
+
+  result_array = []
+
+  #slice in 3 parts
+  number_to_array.each_slice(3) do |x|
+
+      result_array << x
+      #insert at end of array
+      result_array.insert(-1, ",")
+  end
+
+  #take substring
+  result_array = result_array.flatten.join.reverse[1..-1]
+
+  p "#{result_array}"
+
+end
 
 # 3. Reflection
 
@@ -132,20 +102,21 @@ puts separate_comma(10000000)
 answer the following questions (make sure everything in this section is commented out in the file).
 
 1. What was your process for breaking the problem down? What different approaches did you consider?
-  # i broke it down in two parts
-    # find the length
-    # then based on length, detemine how many comma's should i use
+  # .slice array in group of 3
+  # append array backwards
+  # return sub-string [1..-1]
 2. Was your pseudocode effective in helping you build a successful initial solution?
   # Yes
 3. What new Ruby method(s) did you use when refactoring your solution? Describe your experience of using the Ruby documentation to implement it/them (any difficulties, etc.). Did it/they significantly change the way your code works? If so, how?
-  # I used .to_s to convert to String.
-  # .insert to place comma's
+  # I used .slice to group in 3 equal parts
+  # .split(//)
+  # .flatten
 
   # Ruby documentation is extensive and finding appropriate methods for the task is tedious job. After i know what to use and some trial and error in irb worked out for me.
 
 4. How did you initially iterate through the data structure?
-  # I did not use iteration. I hard coded values which is not ideal, but does the job for current scope of assignment. I will be curious to get some feedback on this.
+  # I used .each_slice to iterate
 
 5. Do you feel your refactored solution is more readable than your initial solution? Why?
-  # i did not refractor. My initial solution worked out for me. Besides some obvious bugs, there wasn't many changes.
+  # Yes, number of lines are reduced.
 =end
