@@ -1,6 +1,6 @@
 # Numbers to Commas Solo Challenge
 
-# I spent [] hours on this challenge.
+# I spent [4] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -13,13 +13,13 @@
 # What is the output? (i.e. What should the code return?)
   #comma separated integer as a string
 # What are the steps needed to solve the problem?
-  #conver integer to a String
+  #convert integer to a String
   #calculate length
   #based on length, insert comma's
 
 
 # 1. Initial Solution
-
+=begin
 def separate_comma(x)
 
   y = x.to_s
@@ -53,10 +53,77 @@ puts separate_comma(10000)
 puts separate_comma(1000000)
 puts separate_comma(100000)
 
+=end
 
 # 2. Refactored Solution
+require 'pry'
+def separate_comma(x)
+
+  puts number_to_string = x.to_s
+
+  puts number_to_array = number_to_string.split(//).reverse
+
+  result_array = []
+
+  #binding.pry
+  number_to_array.each_slice(3) do |x|
+    #result_array = x
 
 
+    if x.length < 3
+
+      result_array << x
+      p result_array
+
+    end
+
+    if x.length == 3
+      if (x.include?("1"))
+        result_array << x
+
+        break
+
+      end
+
+      result_array << x
+      result_array.insert(-1, ",")
+
+    end
+
+
+
+      # if x.include?("0")
+
+      # result_array << x
+      # result_array.insert(-1, ",")
+
+
+    # if x.include?("0")
+
+    # result_array = x
+    # result_array.insert(-1, ",")
+
+    # end
+  end
+
+  result_array = result_array.flatten.join.reverse
+  # result_array.reverse
+  p "#{result_array}"
+
+  # number_to_array[0..2]
+  #   #number_to_array.insert(",")
+  #   puts number_to_array
+  # # end
+
+  # puts number_to_array
+
+end
+puts separate_comma(10000000)
+#puts separate_comma(100)
+#puts separate_comma(1000) #- works
+#puts separate_comma(10000) #- works
+#puts separate_comma(1000000) #- works
+#puts separate_comma(100000) #workds
 
 
 # 3. Reflection
