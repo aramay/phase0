@@ -16,25 +16,41 @@
 class Die
   def initialize(labels)
 
-    unless (labels.length <= 0)
+    puts labels.length
+
+    if (labels.empty?)
       raise ArgumentError.new ("Only positive numbers are allowed")
     end
 
+    @labels_sides = labels.length
     @labels = labels
+
+    # puts @labels[0]
 
   end
 
   def sides
+    return @labels
 
   end
 
   def roll
+
+    #return Random number between 1 and sides
+    # num = Random.new()
+    #return num.rand(@label..@sides)
+
+    @labels.sample()
+
+
+
   end
 end
 
-die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
-die.sides # still returns the number of sides, in this case 6
-die.roll # returns one of ['A', 'B', 'C', 'D', 'E', 'F'], randomly
+# die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+
+# die.sides # still returns the number of sides, in this case 6
+# die.roll # returns one of ['A', 'B', 'C', 'D', 'E', 'F'], randomly
 
 begin
   dice1 = Die.new()
