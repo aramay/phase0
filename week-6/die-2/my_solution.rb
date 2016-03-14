@@ -30,7 +30,7 @@ class Die
   end
 
   def sides
-    return @labels
+    return @labels_sides
 
   end
 
