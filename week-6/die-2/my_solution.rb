@@ -120,5 +120,4 @@ What new methods did you learn when working on this challenge, if any?
   # .sample - array method to return random value
 What concepts about classes were you able to solidify in this challenge?
   # I have struggled with exception handling in past, hopefully i can get past it now.
-
 =end
