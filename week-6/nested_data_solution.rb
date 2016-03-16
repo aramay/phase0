@@ -83,3 +83,17 @@ new_array.each {|x| p x + "ly"}
 # end
 
 
+# Release 5: Reflect
+
+=begin
+answers the following questions:
+
+1. What are some general rules you can apply to nested arrays?
+  # start with outer most layer and then move towards working on inner arrays. Think of it as a grid like structure and everything can be access as a matrix.
+
+2. What are some ways you can iterate over nested arrays?
+  # We used ".each" method to iterate over nested arrays.
+3. Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+  # We used "kind_of?" which returns an instance an an element. In this case we checked if element in a list are array, then perform different operation
+
+=end
