@@ -122,7 +122,10 @@ answers the following questions:
   # Instance varaibles allow you to move values between your methods with-in your class. This way we are not limited to using those values in one method, and computations performed in one method can be used in other methods to solve a bigger problem.
 
 3. Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
-  #
-Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+  # Flow controll is checking for certain condition to be met. Based on that condtion we can choose which code to execute and which not. solved?() that i implemented in this challenge is an example.
+  # I struggled with logic to implement solved? method - i didn't realize that i can use @result and compare it's value captured in guess() method.
+
+4. Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+  # Symbols are used as contants. In this case we are using them to compare user input with expected results which will never change through out life cycle of this program.
 
 =end
