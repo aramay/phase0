@@ -6,19 +6,45 @@
 
 # Pseudocode
 
-# Input:
+# Input: Initialize NameData - class with a name
 # Output:
 # Steps:
 
 class NameData
+
+  def initialize(name)
+
+    @name = name
+
+  end
+
+  def hello
+
+    @name
+
+  end
 
 end
 
 
 class Greetings
 
+  def initialize
+
+    @greet = NameData.new("John Doe")
+
+    p "Hello #{@greet.hello}! How wonderful to see you today."
+
+  end
+
 end
 
+
+#test = NameData.new("John Doe")
+
+greet = Greetings.new
+
+#greet.initialize
 
 
 # Reflection
@@ -51,11 +77,6 @@ Release 3
   2. What was replaced?
     # Method 'change_my_age' is no longer required. Same functionality is achieved via 1 Line of code on Line 6.
   3. Is this code simpler than the last?
-    # # yes
-
-Release 4
-
-
-
+    # yes
 
 =end
