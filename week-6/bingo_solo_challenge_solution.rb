@@ -157,60 +157,36 @@ class BingoBoard
 
   def initialize(board)
     @bingo_board = board
-    generate_letter_number
 
-  end
-
-  def generate_letter_number()
-
-    word = ["B", "I", "N", "G", "O"]
-
-    @letter = word.sample
-
-    rand = Random.new
-    @number = rand(1..99)
+    @letter_to_col_map = {
+      "B"=>0,
+      "I"=>1,
+      "N"=>2,
+      "G"=>3,
+      "O"=>4
+    }
 
     check
-
   end
 
   def check()
+    word = ["B", "I", "N", "G", "O"]
+    letter = word.sample
 
-    if (@letter == "B")
-      col = 0
-      check_column(col)
-
-    elsif (@letter == "I")
-      col = 1
-      check_column(col)
-
-    elsif (@letter == "N")
-        col = 2
-        check_column(col)
-
-    elsif (@letter == "G")
-    col = 3
-    check_column(col)
-
-    elsif (@letter == "O")
-      col = 4
-      check_column(col)
-
-    end
-
-
-
+    rand = Random.new
+    number = rand(1..99)
+    check_column(@letter_to_col_map[letter], letter, number)
   end
 
 
-  def check_column(col)
-    binding.pry
+  def check_column(col , letter, number)
+    #binding.pry
 
-    puts "column #{col}"
+    puts "Checking #{letter}#{number}"
 
     for row in 0..@bingo_board.length-1
 
-        if (@bingo_board[row][col] == @number)
+        if (@bingo_board[row][col] == number)
 
         @bingo_board[row][col] = "X"
         end
@@ -260,7 +236,7 @@ answers the following questions:
 5. Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
   # I didn't use any methods.
 6. How did you determine what should be an instance variable versus a local variable?
-  # a Letter, number and bingo board had to be instance varaibles, as all the promary operations were based on comparing if the number is present in that array.
+  # '@bingo_board' and '@letter_to_col_map' had to be instance varaibles, as all the promary operations were based on comparing if the number is present in that array.
 7. What do you feel is most improved in your refactored solution?
   # I used a helper method 'check_column' which is called when column has been determined. After that all operations remain the same. This way i re-used the same code for occurences of letters.
 
