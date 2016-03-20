@@ -22,14 +22,14 @@
   #fill in the outline here
 
 # Initial Solution
+
+=begin
 require 'pry'
 class BingoBoard
 
   def initialize(board)
     @bingo_board = board
-
     generate_letter_number
-
 
   end
 
@@ -39,26 +39,21 @@ class BingoBoard
 
     @letter = word.sample
 
-    # @letter = word[0]
-
-
     rand = Random.new
     @number = rand(1...100)
 
-    # @number = 25
-
-    check_lucky_winner
+    check
 
   end
 
-  def check_lucky_winner()
-binding.pry
+  def check()
+
     #@bingo_board.each {|x| p x}
 
     #p @bingo_board[0][1]
 
     first_col = []
-
+    binding.pry
     if (@letter == "B")
       col = 0
 
@@ -68,8 +63,7 @@ binding.pry
         p first_col
 
       end
-
-
+    # end
 
     elsif (@letter == "I")
 
@@ -81,6 +75,7 @@ binding.pry
         p first_col
 
       end
+    # end
 
     elsif (@letter == "N")
 
@@ -92,6 +87,7 @@ binding.pry
         p first_col
 
       end
+    # end
 
     elsif (@letter == "G")
 
@@ -103,8 +99,9 @@ binding.pry
         p first_col
 
       end
+    # end
 
-    elsif
+    elsif (@letter == "O")
 
       col = 4
 
@@ -114,44 +111,130 @@ binding.pry
         p first_col
 
       end
+    # end
 
-    else
+    # else
 
-      p "no match found"
-        #first_col << @bingo_board[x][col]
+    #   p "no match found"
+
+    # end
+    # binding.pry
+    if (first_col.include?(@number))
+
+      # first_col.each_with_index do |item, index|
+      #   if (item == @number)
+      #     puts "found"
+      #     first_col[index] = "X"
+
+      #   end
+
+      # end
 
     end
-    #binding.pry
-    first_col.each_with_index do |item, index|
 
-      if (item == @number)
-        puts "found"
-        first_col[index] = "X"
-
-      end
-
+    else
+      p "no match found"
+        # p first_col
     end
 
     p first_col
-
-
-
   end
 
 end
 
+=end
 # Refactored Solution
 
+require 'pry'
+class BingoBoard
+
+  def initialize(board)
+    @bingo_board = board
+    generate_letter_number
+
+  end
+
+  def generate_letter_number()
+
+    word = ["B", "I", "N", "G", "O"]
+
+    # @letter = word.sample
+    @letter = "I"
+
+    rand = Random.new
+    # @number = rand(1...100)
+    @number = 69
+
+    check
+
+  end
+
+  def check()
+
+    # first_col = []
+
+    binding.pry
+
+    if (@letter == "B")
+      col = 0
+      check_column(col)
+
+    # p "outside loop"
+    # p @bingo_board
+
+    elsif (@letter == "I")
+      col = 1
+      check_column(col)
+
+    elsif (@letter == "N")
+        col = 2
+        check_column(col)
+
+    elsif (@letter == "G")
+    col = 3
+    check_column(col)
+
+    elsif (@letter == "O")
+      col = 4
+      check_column(col)
+
+    end
+
+
+  end
+  # puts @bingo_board
+
+  def check_column(col)
+
+    for row in 0..@bingo_board.length-1
+        p @bingo_board[row][col]
+
+        if (@bingo_board[row][col] == @number)
+
+        @bingo_board[row][col] = "X"
+        end
+
+      end
+
+      #formated printing of @bingo_board
+      @bingo_board.each_index do |index|
+        p @bingo_board[index]
+      end
+
+
+  end
+  p @bingo_board
+end
 
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
 board = [
-          [47, 44, 71, 8, 88],
-          [22, 69, 75, 65, 73],
-          [83, 85, 97, 89, 57],
-          [25, 31, 96, 68, 51],
-          [75, 70, 54, 80, 83]
-        ]
+  [47, 44, 71, 8, 88],
+  [22, 69, 75, 65, 73],
+  [83, 85, 97, 89, 57],
+  [25, 31, 96, 68, 51],
+  [75, 70, 54, 80, 83]
+]
 
 new_game = BingoBoard.new(board)
 
@@ -159,4 +242,17 @@ new_game = BingoBoard.new(board)
 
 #Reflection
 
+=begin
+
+answers the following questions:
+
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+What are the benefits of using a class for this challenge?
+How can you access coordinates in a nested array?
+What methods did you use to access and modify the array?
+Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+How did you determine what should be an instance variable versus a local variable?
+What do you feel is most improved in your refactored solution?
+
+=end
 
