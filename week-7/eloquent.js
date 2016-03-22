@@ -17,6 +17,8 @@ console.log("c"+"c")
 
 //alert("hello")
 
+var food = prompt("What is your favourite food?")
+lert("Hey! That's my favorite too! " + food )
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 
 //Looping a Triangle
