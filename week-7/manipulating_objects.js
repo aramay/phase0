@@ -16,27 +16,41 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
-terah.spouse = adam
-
-
 var adam = {
   name: "Adam",
   spouse: terah
 };
 
+terah.weight = 125
 
-// var terah = {
-//   name: "Terah",
-//   age: 32,
-//   height: 66,
-//   weight: 125,
-//   hairColor: "brown",
-//   // eyeColor: "brown",
-//   spouse: adam
+terah.spouse = adam
+
+delete terah.eyeColor
+
+// var carson = {
+//   name: "Carson"
 // };
 
-// console.log(adam.spouse)
-console.log(terah)
+// terah.children = carson
+
+terah.children = {
+  carson: {
+    name: "Carson"
+  },
+
+  carter: {
+    name: "Carter"
+  },
+
+  colton: {
+    name: "Colton"
+  },
+}
+
+adam.children = terah.children
+
+
+// console.log(terah)
 
 
 
@@ -44,15 +58,14 @@ console.log(terah)
 // Reflection: Use the reflection guidelines
 //answer the following questions:
 
-// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
-// How difficult was it to add and delete properties outside of the object itself?
-// What did you learn about manipulating objects in this challenge?
-//
-//
-//
-//
-//
+// 1. What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+// # I struggled with 8-9. I fixed with trial and error and researched ways to define children objects.
+// 2. How difficult was it to add and delete properties outside of the object itself?
+// # adding and deleting was easy. Creating nested data structure was confusing. Mostly due to vast text of documentation and multiple ways of doing one thing.
 
+// 3. What did you learn about manipulating objects in this challenge?
+//  # I learned how to create and add properties to objects. How do you create nested data structure. Different ways to manipulate.
+//
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
