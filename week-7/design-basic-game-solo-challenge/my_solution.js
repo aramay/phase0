@@ -17,25 +17,79 @@
 //
 
 // Initial Code
-function Gems(position){
-  this.position = position
+function Gems(posX, posY){
+  this.posX = posX;
+  this.posY = posY;
 }
 
-function Spikes(position){
+function Spikes(posX, posY){
+  this.posX = posX;
+  this.posY = posY;
+}
+
+function Warrior(posX, posY){
+  this.posX = posX;
+  this.posY = posY;
+
+  this.Move = function(direction){
+    if(direction === "forward")
+      this.posX += 10;
+
+    if(direction === "back"){
+      this.posY -= 10;
+    }
+
+    if(direction === "up"){
+      this.posY += 10;
+    }
+
+    if(direction === "down"){
+      this.posY -= 10;
+    }
+  }
 
 }
 
-function Warrior(move){
-  this.move = move;
+
+var dragonWarrior = new Warrior(0, 0)
+
+dragonWarrior.posX = Math.floor((Math.random() * 50) + 1);
+dragonWarrior.posY = Math.floor((Math.random() * 50) + 1);
+
+var warriorPosition = dragonWarrior.posX + dragonWarrior.posY;
+
+var spike = new Spikes(0,0)
+
+spike.posX = Math.floor((Math.random() * 50) + 1);
+spike.posY = Math.floor((Math.random() * 50) + 1);
+
+var spikePosition = spike.posX + spike.posY;
+// dragonWarrior.moveUp = move;
+
+var gems = new Gems(0,0)
+
+gems.posX = Math.floor((Math.random() * 50) + 1);
+gems.posY = Math.floor((Math.random() * 50) + 1);
+
+var gemsPosition = gems.posX + gems.posY;
+
+
+console.log(warriorPosition);
+console.log(spikePosition);
+console.log(gemsPosition);
+
+if (warriorPosition == spikePosition) {
+  console.log("Game Over, You are stuck in spikes !!")
 }
 
+else if (warriorPosition == gemsPosition) {
+  var gold = 1;
+  gold ++;
+  console.log("You Scored some Gold! " +gold)
+};
 
-
-
-var dragonWarrior = new Warrior(12)
-
-console.log(dragonWarrior.move)
-
+dragonWarrior.Move("forward");
+dragonWarrior.Move("back");
 
 // Refactored Code
 
