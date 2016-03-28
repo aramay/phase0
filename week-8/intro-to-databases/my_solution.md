@@ -1,7 +1,7 @@
 # Introduction to Databases
 
 #### I worked on this challenge [by myself ]
-#### This challenge took me [#] hours.
+#### This challenge took me [2] hours.
 
 ## SQL Queries
 
@@ -33,16 +33,16 @@ Paste the correct SQL queries for each of the following:
 6. Select the 'state_names' and 'population_density' with a population density over 50 ordered from least to most dense:
 
     * select state_name, population_density
-    *...> from states
-    *...> where population_density > 50
-    *...> ORDER BY population_density ASC;
+    * ...> from states
+    * ...> where population_density > 50
+    * ...> ORDER BY population_density ASC;
 
 7. Select all state_names for states with a population between 1 million and 1.
 5 million people:
     * 
 8. Select all state_names and region_id ordered by region in ascending order:
     * select state_name, region_id
-    *...> from states
+    * ...> from states
     * ...> ORDER BY region_id ASC;
 
 9. Select the 'region_name' for the regions with "Central" in the name:
