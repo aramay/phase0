@@ -39,14 +39,19 @@ Paste the correct SQL queries for each of the following:
 
 7. Select all state_names for states with a population between 1 million and 1.
 5 million people:
-    * 
+    * select state_name, population
+    * ...> from states
+    * ...> where population BETWEEN 1000000 and 1500000;
+
 8. Select all state_names and region_id ordered by region in ascending order:
     * select state_name, region_id
     * ...> from states
     * ...> ORDER BY region_id ASC;
 
 9. Select the 'region_name' for the regions with "Central" in the name:
-    * 
+    * select region_name
+    * ...> from regions
+    * ...> where region_name LIKE '%central%';
 10. Select all of the region names and the state names in ascending order by regional id:
     * select region_name, state_name from states
     * ...> cross join regions
@@ -54,6 +59,21 @@ Paste the correct SQL queries for each of the following:
 
 ## `persons` and `outfits` Schema
 <!-- Include a link to your schema design here -->
-
+    * ![DB-Schema](DB-schema.png)
 
 ## Reflection
+
+## answer the following questions:
+
+1. What are databases for?
+    * Databases are storing and retrieving records. 
+2. What is a one-to-many relationship?
+    * one-to-many relationship is a type of cardinality that refers to the relationship between two entities. In database model, A row from one table is Linked to many rows in another table.
+
+3. What is a primary key? What is a foreign key? How can you determine which is which?
+    * `Primary Keys` uniquely identify each row in the table. Primary keys can be auto generated numbers or some value that can uniquely identify a record.
+    * A `foreign key` (FK) is a column or combination of columns that is used to establish and enforce a link between the data in two tables. 
+
+4. How can you select information out of a SQL database? What are some general guidelines for that?
+    * We can use `select` statements with column name.
+    * We can filter data with `where` clause.
