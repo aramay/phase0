@@ -59,7 +59,7 @@ Paste the correct SQL queries for each of the following:
 
 ## `persons` and `outfits` Schema
 <!-- Include a link to your schema design here -->
-![DB-Schema](/intro-to-databases/DB-schema.png)
+![DB-Schema](img/DB-schema.png)
 
 ## Reflection
 
