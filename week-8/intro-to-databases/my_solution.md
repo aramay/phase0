@@ -59,8 +59,7 @@ Paste the correct SQL queries for each of the following:
 
 ## `persons` and `outfits` Schema
 
-![DB-image]
-(/DB-schema.png)
+![DB-image](/DB-schema.png)
 
 ## Reflection
 
