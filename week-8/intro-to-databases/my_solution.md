@@ -73,6 +73,7 @@ Paste the correct SQL queries for each of the following:
 3. What is a primary key? What is a foreign key? How can you determine which is which?
     * `Primary Keys` uniquely identify each row in the table. Primary keys can be auto generated numbers or some value that can uniquely identify a record.
     * A `foreign key` (FK) is a column or combination of columns that is used to establish and enforce a link between the data in two tables. 
+    * We can check `schema` details to check which is which. It usually has `primary key` or `foreign key` identifiers there.
 
 4. How can you select information out of a SQL database? What are some general guidelines for that?
     * We can use `select` statements with column name.
