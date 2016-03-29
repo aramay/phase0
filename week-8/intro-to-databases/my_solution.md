@@ -59,14 +59,14 @@ Paste the correct SQL queries for each of the following:
 
 ## `persons` and `outfits` Schema
 
-![DB-image](/DB-schema.png)
+![DB-image](img/db-schema.png)
 
 ## Reflection
 
-## answer the following questions:
+## Answer the following questions:
 
 1. What are databases for?
-    * Databases are storing and retrieving records. 
+    * Databases are used for storing and retrieving records. 
 2. What is a one-to-many relationship?
     * one-to-many relationship is a type of cardinality that refers to the relationship between two entities. In database model, A row from one table is Linked to many rows in another table.
 
