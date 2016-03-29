@@ -7,14 +7,14 @@
 
     If we take a closer look, `address` field would have state, street, house number etc .... Usually we just want to store one value per field. There is a concept called `Normalization`. It is the process of efficiently organizing data in a database. There are two goals of the normalization process: eliminating redundant data (for example, storing the same data in more than one table) and ensuring data dependencies make sense. 
 
-    Our revised customer table would like this, and eery customer can only have one address. 
+    Our revised customer table would look like this, and every customer can only have one address. 
 
     ![8.5-release-2.1]
     (imgs/8.5-release-2.1.png)
 
 ## Release 3: Many to Many Relationships
 
-2. In Many to Many Relationship, we can move zip filed in a seperate table and lookup state and city info. Our final iteration will look something like this.
+2. In Many to Many Relationship, we can move zip code field in a seperate table and lookup state and city info. Our final iteration will look something like this.
 
     ![8.5-release-2.2]
     (imgs/8.5-release-2.2.png)
@@ -37,7 +37,8 @@
 
 answer the following questions:
 
-What is a one-to-one database?
+1. What is a one-to-one database?
+    
 When would you use a one-to-one database? (Think generally, not in terms of the example you created).
 What is a many-to-many database?
 When would you use a many-to-many database? (Think generally, not in terms of the example you created).
