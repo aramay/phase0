@@ -58,10 +58,9 @@ Paste the correct SQL queries for each of the following:
     * ...> ORDER BY region_id ASC;
 
 ## `persons` and `outfits` Schema
-<!-- Include a link to your schema design here -->
 
 ![DB-image]
-(DB-schema.png)
+(/DB-schema.png)
 
 ## Reflection
 
