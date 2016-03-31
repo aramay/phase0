@@ -1,8 +1,8 @@
 /*
 Gradebook from Names and Scores
 
-I worked on this challenge [with:]
-This challenge took me [-] hours.
+I worked on this challenge [with: Carlos Gonzalez]
+This challenge took me [2] hours.
 
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -11,7 +11,6 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 Do not alter the students and scores code.
 
 */
-
 var students = ["Joseph", "Susan", "William", "Elizabeth"]
 
 var scores = [ [80, 70, 70, 100], //Joseph's scores
@@ -20,104 +19,116 @@ var scores = [ [80, 70, 70, 100], //Joseph's scores
                [100, 90, 95, 85] ] // Elizabeth's scores
 
 
+
+
+
 // __________________________________________
 // Write your code below.
-
-
+/*
 var gradebook = {
   Joseph: {
-    testScores: [80, 70, 70, 100]
+    testScore:[80, 70, 70, 100]
   },
-
-  "Susan": {
-    testScores: [85, 80, 90, 90]
-
+  Susan: {
+    testScore:[85, 80, 90, 90]
   },
-
-  William: {
-    testScores: [75, 70, 80, 75]
-
+  William : {
+    // testScore:[75, 70, 80, 75]
+    testScore:scores[2]
   },
+  Elizabeth : {
+    testScore:[100, 90, 95, 85]
+  }
 
-  Elizabeth: {
-    testScores: [100, 90, 95, 85]
+};
 
-  },
+gradebook.addScore = function(name, scorearguments){
 
-  addScore: function(name, score){
+  console.log(gradebook[name].testScore.push(scorearguments));
 
-    console.log(gradebook[name].testScores.push(score))
-
-    console.log(gradebook[name])
-    // console.log(name.testScores.push(score))
-
-  },
-
-  getAverage: function(name){
-    console.log("get average running");
-    // console.log(gradebook.getAverage())
-
-    var testScores = gradebook[name].testScores;
-
-    this.average(name, testScores);
-  },
-
-  average: function(name, avg){
-
-    var add = 0;
-
-    for(var x in avg){
-      console.log(x)
-
-      add += avg[x];
-
-
-    }
-
-
-    console.log("average running " + add + "=>" + avg[0]);
-
-  },
-
+  console.log(gradebook[name].testScore)
 
 }
 
+gradebook.getAverage = function (name){
 
-// console.log(gradebook)
+  var testScores = gradebook[name].testScore;
+  // console.log(testScores);
+  this.average(testScores);
 
-// console.log(gradebook.Joseph.testScores.push(1))
+}
+
+gradebook.average = function(testScores){
+
+  console.log("running average")
+
+  var add = 0;
+  var answer = 0;
+
+  for (var x in testScores){
+    add += testScores[x];
+  }
+  answer = (add / testScores.length);
+
+  return answer;
+}
 
 
 
+// gradbook.average([100, 90, 95, 85])
 
-var scores = gradebook.addScore("Susan", 80)
+gradebook.getAverage("Susan")
+gradebook.addScore("Susan", 80) // would push the score 80 into the value of gradebook.Susan.testScores.
 
-console.log(gradebook.getAverage("Susan"))
-
-
-
-
-
-
+*/
 // __________________________________________
 // Refactored Solution
+var gradebook = {
+  Joseph: {
+    testScores: scores[0]
+  },
+  Susan: {
+    testScores: scores[1]
+  },
+  William: {
+    testScores: scores[2]
 
+  },
+  Elizabeth : {
+    testScores: scores[3]
+  }
 
+};
 
+//addScore function
+gradebook.addScore = function(name, scorearguments){
 
+  gradebook[name].testScores.push(scorearguments);
 
+}
 
+//getAverage function
+gradebook.getAverage = function (name){
 
+  var scores = gradebook[name].testScores;
+  var avg = average(scores);
 
-// __________________________________________
-// Reflect
+  return avg;
 
+}
 
+// Average function
+var average = function (testScores){
 
+  var add = 0;
+  var answer = 0;
 
-
-
-
+  for (var x in testScores){
+    add += testScores[x];
+  }
+  answer = (add / testScores.length);
+  return answer;
+}
 
 
 // __________________________________________
