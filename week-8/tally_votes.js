@@ -65,12 +65,39 @@ var officers = {
 }
 
 // Pseudocode
-// Work in progress
+
+/*
+1. go through votes list.
+  1a. find candidates for president, vicePresident, secretary, treasurer
+2. store votes in new list with name and number of votes.
+  2a. if name already exists, increase vote count by 1
+  2b. create a new entry with vote count 1
+3. announce winners w.r.t their offices.
+
+*/
 
 // __________________________________________
 // Initial Solution
 
+// for (var x in votes){
+  var x = 0;
+  console.log(votes.Alex);
+  var pres = votes.Alex.president
 
+  console.log(pres);
+
+  // voteCount.president = pres;
+
+voteCount.president[pres] = 1;
+  console.log(voteCount)
+
+  // voteCount.president.Bob = 1;
+
+  console.log(voteCount.president.Bob);
+
+  // console.log(Object.keys(voteCount.president));
+
+// }
 
 
 
