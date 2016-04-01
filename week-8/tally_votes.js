@@ -52,7 +52,7 @@ voteCount would be ...
     treasurer: { Kerry: 1 }
   }
 
-*/
+  */
 
 
 /* Once the votes have been tallied, assign each officer position the name of the
@@ -65,29 +65,146 @@ var officers = {
 }
 
 // Pseudocode
-// Work in progress
+
+/*
+1. go through votes list.
+  1a. find candidates for president, vicePresident, secretary, treasurer
+2. store votes in new list with name and number of votes.
+  2a. IF name already exists, increase vote count by 1
+  2b. ELSE create a new entry with name and vote count 1
+3. announce winners w.r.t their offices.
+
+*/
 
 // __________________________________________
 // Initial Solution
+/*
+
+  var x = 0;
+
+  console.log(votes.Alex);
+  // var pres = votes.Alex.president
+  // console.log(pres);
+
+  for (var name in votes){
+    for (var office in votes[name]){
+      // var x = votes.[key];
+
+      // countVote(office, votes[name][office]);
+      countVote(office, votes[name][office]);
+
+    }
+  }
+
+
+function countVote(office, candidate) {
+
+  candidateOffice = {};
+
+  var count = 1;
+
+  if (voteCount[office].hasOwnProperty(candidate)){
+
+    //voteCount[key] = candidateOffice[candidate];
+    count = voteCount[office][candidate];
+    voteCount[office][candidate] = count + 1;
+    //candidateOffice[candidate] = count;
+    //voteCount[key] = candidateOffice;
+  }
+
+  else {
+    voteCount[office][candidate] = count;
+
+    //voteCount[key] = candidateOffice;
+  }
+
+
+  console.log("votecount keys "+ voteCount[office]);
+  console.log(voteCount[office]);
+  console.log(candidateOffice.Bob);
 
 
 
-
-
-
-
+  console.log(candidateOffice);
+  console.log(voteCount);
+  console.log(office);
+}
+*/
 // __________________________________________
 // Refactored Solution
 
+for (var name in votes){
+  for (var office in votes[name]){
+
+    countVote(office, votes[name][office]);
+
+  }
+}
 
 
+function countVote(office, candidate) {
+
+  var count = 1;
+
+  if (voteCount[office].hasOwnProperty(candidate)){
+
+    count = voteCount[office][candidate];
+    voteCount[office][candidate] = count + 1;
+
+  }
+
+  else {
+    voteCount[office][candidate] = count;
+
+  }
+
+  // console.log("votecount keys "+ voteCount[office]);
+  // console.log(voteCount[office]);
+  // // console.log(candidateOffice.Bob);
+
+  // // console.log(candidateOffice);
+  // console.log(voteCount);
+  // console.log(office);
+}
+
+/*********************************/
 
 
+for (office in voteCount){
+
+  var max = 0;
+  // console.log(office);
+
+  for (candidate in voteCount[office]){
+
+    console.log("count votes " +office +"=>"+ candidate)
+
+    if (voteCount[office][candidate] > max){
+      console.log("max string " + max);
+      max = voteCount[office][candidate];
+      console.log(max);
+
+      officers[office] = candidate;
+    }
+  }
+
+}
+
+console.log(officers);
+// console.log("officers");
+// console.log(officers);
 
 // __________________________________________
 // Reflection
 
+/*
+answer the following questions:
 
+What did you learn about iterating over nested objects in JavaScript?
+Were you able to find useful methods to help you with this?
+What concepts were solidified in the process of working through this challenge?
+
+*/
 
 
 
@@ -109,46 +226,46 @@ assert(
   (voteCount.president["Bob"] === 3),
   "Bob should receive three votes for President.",
   "1. "
-)
+  )
 
 assert(
   (voteCount.vicePresident["Bob"] === 2),
   "Bob should receive two votes for Vice President.",
   "2. "
-)
+  )
 
 assert(
   (voteCount.secretary["Bob"] === 2),
   "Bob should receive two votes for Secretary.",
   "3. "
-)
+  )
 
 assert(
   (voteCount.treasurer["Bob"] === 4),
   "Bob should receive four votes for Treasurer.",
   "4. "
-)
+  )
 
 assert(
   (officers.president === "Louise"),
   "Louise should be elected President.",
   "5. "
-)
+  )
 
 assert(
   (officers.vicePresident === "Hermann"),
   "Hermann should be elected Vice President.",
   "6. "
-)
+  )
 
 assert(
   (officers.secretary === "Fred"),
   "Fred should be elected Secretary.",
   "7. "
-)
+  )
 
 assert(
   (officers.treasurer === "Ivy"),
   "Ivy should be elected Treasurer.",
   "8. "
-)
+  )
