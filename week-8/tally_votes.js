@@ -199,6 +199,8 @@ answer the following questions:
   # Iterating over nested data structures. Comparing keys and value from
   seperate structures. Extracting values, comparing results, updating results.
 
+  # Understanding the difference between '.' dot notation and '[ ]' notation was absouletly necessary to complete this challenge.
+
 */
 
 
