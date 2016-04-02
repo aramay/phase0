@@ -158,13 +158,6 @@ function countVote(office, candidate) {
 
   }
 
-  // console.log("votecount keys "+ voteCount[office]);
-  // console.log(voteCount[office]);
-  // // console.log(candidateOffice.Bob);
-
-  // // console.log(candidateOffice);
-  // console.log(voteCount);
-  // console.log(office);
 }
 
 /*********************************/
@@ -177,12 +170,8 @@ for (office in voteCount){
 
   for (candidate in voteCount[office]){
 
-    console.log("count votes " +office +"=>"+ candidate)
-
     if (voteCount[office][candidate] > max){
-      console.log("max string " + max);
       max = voteCount[office][candidate];
-      console.log(max);
 
       officers[office] = candidate;
     }
@@ -200,9 +189,15 @@ console.log(officers);
 /*
 answer the following questions:
 
-What did you learn about iterating over nested objects in JavaScript?
-Were you able to find useful methods to help you with this?
-What concepts were solidified in the process of working through this challenge?
+1. What did you learn about iterating over nested objects in JavaScript?
+  # for nested data structures, we can use a key to point
+  to next object and iterate over them.
+2. Were you able to find useful methods to help you with this?
+  # We used 'hasOwnProperty' to figure out if key is present, bassed
+  on the outcome perform related operations.
+3. What concepts were solidified in the process of working through this challenge?
+  # Iterating over nested data structures. Comparing keys and value from
+  seperate structures. Extracting values, comparing results, updating results.
 
 */
 
