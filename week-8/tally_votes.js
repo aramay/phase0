@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: John Colella
+// This challenge took me [8] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -166,7 +166,6 @@ function countVote(office, candidate) {
 for (office in voteCount){
 
   var max = 0;
-  // console.log(office);
 
   for (candidate in voteCount[office]){
 
@@ -180,8 +179,6 @@ for (office in voteCount){
 }
 
 console.log(officers);
-// console.log("officers");
-// console.log(officers);
 
 // __________________________________________
 // Reflection
