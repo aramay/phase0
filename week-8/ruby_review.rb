@@ -3,9 +3,33 @@
 # I spent [4] hours on this challenge.
 
 # Pseudocode
+=begin
+1. Horizontal
+  # Check bingo board first row first element.
+    IF element is equal to X
+      CONTINUE
+    ELSE
+      Move to next row
+  Repeat process for all rows
 
+2. Vertical
+  # # Check bingo board first col first element.
+    IF element is equal to X
+      CONTINUE to find X in same row
+    ELSE
+      Move to next col
+  Repeat process for all col
 
+3. Diagonal
+  # Check bingo board first element in first row
+    IF first element is equal to X
+      CONTINUE to search left-to-right in diagonal
+    ELSE
+      IF last element in first row is equal to X
+      CONTiNUE to search right-to-left
+    END
 
+=end
 
 
 # sample boards
