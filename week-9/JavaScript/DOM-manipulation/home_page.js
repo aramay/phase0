@@ -1,7 +1,7 @@
 // DOM Manipulation Challenge
 
 
-// I worked on this challenge [with: ].
+// I worked on this challenge [with: Christyn Budzyna].
 
 
 // Add your JavaScript calls to this page:
@@ -16,16 +16,15 @@ document.getElementById("release-0").className = "done";
 
 // Release 2:
 
-
 document.getElementById("release-1").style.display = "none";
 
 // Release 3:
-document.getElementsByTagName("h1")[0].innerHTML = "I completed release 2.";
 
+document.getElementsByTagName("h1")[0].innerHTML = "I completed release-2";
 
 // Release 4:
 
-
+document.getElementById("release-3").style.backgroundColor = "#955251";
 
 
 // Release 5:
@@ -40,15 +39,6 @@ for (var i = 0; i < elements.length; i++) {
 
 // Release 6
 
-// var para = document.createElement("p");
-
-// var node = document.createTextNode("new element");
-
-// para.appendChild(node);
-
-// var element = document.getElementById("release-3");
-
-// element.appendChild(para);
 
 var tmp1 = document.getElementById("hidden")
 
