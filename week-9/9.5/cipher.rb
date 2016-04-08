@@ -1,11 +1,14 @@
 # Cipher Challenge
 
-# I worked on this challenge [by myself, with:]
-# I spent [#] hours on this challenge.
+# I worked on this challenge [with: Robin Soubry]
+# I spent [2] hours on this challenge.
 
 # 1. Solution
 # Write your comments on what each thing is doing.
 # If you have difficulty, go into IRB and play with the methods.
+
+# Pseudocode
+
 
 =begin
 def DrEvilsCipher(coded_message)
@@ -117,3 +120,15 @@ DrEvilsCipher.new("syv%ievpc#exxiqtxw&ex^e$xvegxsv#fieq#airx%xlvsykl$wizivep#tvi
 
 # Reflection
 # Keep your reflection limited to 10-15 minutes!
+
+=begin
+answer the following questions:
+
+1. What concepts did you review in this challenge?
+  # Using Hashes and comparing data across different data structure.
+2. What is still confusing to you about Ruby?
+  # At this moment, i still feel a bit confused about classes  and objects
+3. What are you going to study to get more prepared for Phase 1?
+  # Classes and objects
+
+=end
